@@ -3,7 +3,7 @@ import "./Proyecto.css";
 
 function Proyecto(props) {
   return (
-    <a className="proyecto_card items-center justify-center block w-full flex-wrap text-palido bg-oscuro rounded-[.6rem] mb-[3rem] overflow-hidden sm:w-[47.5%] sm:mb-[6rem] hover:scale-[.99]" href={props.link}>
+    <a target="_blank" without rel="noreferrer" className="proyecto_card items-center justify-center block w-full flex-wrap text-palido bg-oscuro rounded-[.6rem] mb-[3rem] overflow-hidden sm:w-[47.5%] sm:mb-[6rem] hover:scale-[.99]" href={props.link}>
       {props.imagen && (<img src={props.imagen} className="proyecto_card_img w-full h-auto border-b-[.3rem] border-secondary " alt="" />)}
       <div className="proyecto_card_contenido p-[2.4rem] ">
         {props.titulo && <h2 className="proyecto_card_title uppercase text-[2.2rem] leading-[2.6rem] tracking-[.175rem] mb-[.5rem]">{props.titulo}</h2>}

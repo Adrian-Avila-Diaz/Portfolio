@@ -21,7 +21,7 @@ function Contactos() {
             iconEl = <Whatsapp />;
         }
         return <li className={`Contacto-${social.red} blocks`} key={social.id}>
-            <a className='item-a flex items-center justify-center relative h-[6rem] w-[6rem] rounded-full overflow-hidden hover:scale-[1.1] mr-[3rem]' href={social.url}>
+            <a target="_blank" without rel="noreferrer" className='item-a flex items-center justify-center relative h-[6rem] w-[6rem] rounded-full overflow-hidden hover:scale-[1.1] mr-[3rem]' href={social.url}>
                 {iconEl}
             </a>
         </li>
