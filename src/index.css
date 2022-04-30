@@ -1,13 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Newake";
+  src: url("./fonts/newake-font-webfont.woff2") format("woff2"),
+    url("./fonts/newake-font-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-light-webfont.woff") format("woff");
+}
+
+:root {
+  --c-darkest: #050E13;
+  --c-lightest: #FFE1CA;
+  --c-primary: #3d5afe;
+  --c-secondary: #d500f9;
+  /* Fonts */
+  --f-primary: "Newake", sans-serif;
+  --f-secondary: "Roboto", sans-serif;
+
+  /* Spacing */
+  --global-padding: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--f-primary);
+}
+
+@media only screen and (min-width: 600px) {
+  .home-hero__title {
+      font-size: 8.4rem;
+  }
+
+  .home-hero__text {
+      font-size: 2.2rem;
+  }
 }

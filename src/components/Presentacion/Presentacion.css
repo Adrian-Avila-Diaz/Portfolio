@@ -1,0 +1,80 @@
+.contendor_main {
+    --animation-curve: cubic-bezier(.96,-0.01,.99,.61);
+    --animation-curve--rev: cubic-bezier(0,.72,.55,1);
+}
+
+#tiutlo {
+    width: 100%;
+    opacity: 0;
+
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-timing-function: var(--animation-curve--rev);
+}
+
+#eslogan {
+    width: 100%;
+    opacity: 0;
+
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-timing-function: var(--animation-curve--rev);
+}
+
+.circulo_1 {
+    background: linear-gradient(-45deg, var(--c-primary), var(--c-secondary));
+
+    animation-name: slide-left;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+}
+
+.circulo_2 {
+    background: linear-gradient(-140deg, var(--c-primary), var(--c-secondary));
+    
+    animation-name: slide-right;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .6s;
+    animation-timing-function: var(--animation-curve--rev);
+}
+
+
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0rem);
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0rem);
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+font-family: "Newake";
+src: url("./fonts/newake-font-webfont.woff2") format("woff2"),
+        url("./fonts/newake-font-webfont.woff") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/roboto-light-webfont.woff2") format("woff2"),
+            url("./fonts/roboto-light-webfont.woff") format("woff");
+    }
+
+:root {
+    
+    --f-primary: 'Newake', sans-serif;
+    --f-secondary: 'Roboto', sans-serif;
+
+    --global-padding: 1.5rem;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--f-primary);
+    letter-spacing: .1rem;
+    overflow-x: hidden;
+    background-color: var(--c-darkest);
+    color: var(--c-lightest);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--f-primary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p, a, ul, ol, li {
+    font-family: var(--f-secondary);
+    letter-spacing: 0;
 }

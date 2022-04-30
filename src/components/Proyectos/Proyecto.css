@@ -1,0 +1,13 @@
+.proyecto_card {
+    -webkit-box-shadow: 0rem 0rem 1rem .5rem rgba(255, 255, 255, .1);
+    box-shadow: 0rem 0rem 1rem .5rem rgba(255, 255, 255, .1);
+
+    transition: all .25s ease-in-out;
+    overflow: hidden;
+}
+
+.proyecto_card:hover {
+    transform: scale(0.99);
+    -webkit-box-shadow: 0rem 0rem .1rem .1rem rgba(255, 255, 255, .1);
+    box-shadow: 0rem 0rem .1rem .1rem rgba(255, 255, 255, .1);
+}

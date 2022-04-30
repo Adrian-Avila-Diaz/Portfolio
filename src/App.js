@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './reset.css';
+import "./App.css";
+import Presentacion from './components/Presentacion/Presentacion';
+import Proyectos from './components/Proyectos/Proyectos';
+import Contactos from './components/Contactos/Contactos';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  return (<>
+  <Presentacion nombre="Adrian Avila" eslogan="Frontend developer with an eye for design"/>
+  <Proyectos/>
+  <Contactos/>
+  </>);}
 
 export default App;

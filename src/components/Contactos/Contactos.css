@@ -1,0 +1,51 @@
+.item-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.item-a:before {
+    content: '';
+    position: absolute;
+    height: 300%;
+    width: 300%;
+    left: -150%;
+    bottom: -150%;
+    background: linear-gradient(140deg, var(--c-primary), var(--c-secondary));
+    z-index: 1;
+}
+
+
+.item-a:hover {background: blue;
+    background: linear-gradient(180deg, var(--c-primary), var(--c-secondary));
+}
+
+.item-a svg {
+    position: relative;
+    max-height: 2.5rem;
+    height: auto;
+    fill: var(--c-darkest);
+    z-index:2;
+}
+
+.Contacto-twitter a svg {
+    max-height: 2.5rem;
+}
+
+.Contacto-linkedin a svg {
+    max-height: 2.7rem;
+}
+
+.Contacto-github a svg {
+    max-height: 3rem;
+}
+
+.Contacto-whatsapp a svg {
+    max-height: 3rem;
+}
