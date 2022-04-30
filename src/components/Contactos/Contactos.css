@@ -27,7 +27,7 @@
 }
 
 .item-a svg {
-    position: relative;
+    position: absolute;
     max-height: 2.5rem;
     height: auto;
     fill: var(--c-darkest);
