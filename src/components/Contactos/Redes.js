@@ -7,12 +7,12 @@ const Redes = [
     {
         id: 2,
         red: 'linkedin',
-        url: 'https://www.linkedin.com/in/adrian-avila-diaz-2658ab193/.com/in/jamie-moore-360579147/'
+        url: 'https://www.linkedin.com/in/adrian-avila-diaz-2658ab193/'
     },
     {
         id: 3,
         red: 'github',
-        url: 'https://github.com/Dranesw'
+        url: 'https://github.com/Adrian-Avila-Diaz'
     },
     {
         id: 4,
