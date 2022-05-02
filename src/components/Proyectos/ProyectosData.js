@@ -2,7 +2,7 @@ const ProjectsData = [
     {
         id: 1,
         titulo: 'Wata Resort',
-        texto: 'Moderna landing page. Desarrollada con React, Javascript, HTML, Tailwind & CSS',
+        texto: 'Moderna landing page. Desarrollada con React, Javascript, HTML, CSS & Tailwind.',
         imagen: 'https://cdn.discordapp.com/attachments/651525348562960394/970571582911168532/wata.png',
         link: 'https://wataa.netlify.app/',
     },
