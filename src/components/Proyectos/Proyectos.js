@@ -12,7 +12,7 @@ function Proyectos(props) {
     })
 
   return (<>
-        <section className="proyectos relative w-[100%] px-[2.5rem] mx-auto z-100 sm:flex sm:items-center sm:items-stretch sm:justify-center sm:wrap lg:pl-[12.5%] lg:pr-[12.5%] ">
+        <section className="proyectos relative w-[100%] px-[2.5%] mx-auto z-100 sm:flex sm:justify-between sm:items-stretch sm:justify-center sm:wrap lg:pl-[12.5%] lg:pr-[12.5%] ">
             {projectsEls}
         </section>
     </>)
